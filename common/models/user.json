@@ -1,0 +1,54 @@
+{
+  "name": "user",
+  "base": "User",
+  "idInjection": true,
+  "restrictResetPasswordTokenScope": true,
+  "emailVerificationRequired": true,
+  "properties": {
+    "estado": {
+      "type": "string"
+    },
+    "nombre": {
+      "type": "string"
+    },
+    "apellido": {
+      "type": "string"
+    },
+    "dni": {
+      "type": "string"
+    },
+    "cargo": {
+      "type": "string"
+    },
+    "log_ip": {
+      "type": "string"
+    },
+    "notifi": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "empresa": {
+      "type": "belongsTo",
+      "model": "Empresa",
+      "foreignKey": ""
+    },
+    "equipos": {
+      "type": "hasMany",
+      "model": "Equipo",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

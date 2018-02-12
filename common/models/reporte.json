@@ -1,0 +1,79 @@
+{
+  "name": "Reporte",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ip": {
+      "type": "string"
+    },
+    "puerto": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "fecserv": {
+      "type": "date"
+    },
+    "enc": {
+      "type": "string"
+    },
+    "fec": {
+      "type": "string"
+    },
+    "hor": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "string"
+    },
+    "lon": {
+      "type": "string"
+    },
+    "vel": {
+      "type": "string"
+    },
+    "dir": {
+      "type": "string"
+    },
+    "gps": {
+      "type": "string"
+    },
+    "eda": {
+      "type": "string"
+    },
+    "csq": {
+      "type": "string"
+    },
+    "evt": {
+      "type": "string"
+    },
+    "dig": {
+      "type": "string"
+    },
+    "id_e": {
+      "type": "string",
+      "required": true
+    },
+    "nmg": {
+      "type": "string"
+    },
+    "id_e_obj": {
+      "type": "object",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "equipo": {
+      "type": "belongsTo",
+      "model": "Equipo",
+      "foreignKey": "id_e_obj"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

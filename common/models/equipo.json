@@ -1,0 +1,121 @@
+{
+  "name": "Equipo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "firmware": {
+      "type": "string"
+    },
+    "hard_serie": {
+      "type": "string"
+    },
+    "hard_marca": {
+      "type": "string"
+    },
+    "hard_version": {
+      "type": "string"
+    },
+    "ip_serv": {
+      "type": "string"
+    },
+    "equipo_id": {
+      "type": "string",
+      "required": true
+    },
+    "puerto_serv": {
+      "type": "string"
+    },
+    "numerosim1": {
+      "type": "string"
+    },
+    "imeisim1": {
+      "type": "string"
+    },
+    "numerosim2": {
+      "type": "string"
+    },
+    "imeisim2": {
+      "type": "string"
+    },
+    "fec_crea": {
+      "type": "date"
+    },
+    "fec_modi": {
+      "type": "date"
+    },
+    "fec_ulti": {
+      "type": "date"
+    },
+    "ip": {
+      "type": "string"
+    },
+    "puerto": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "enc": {
+      "type": "string"
+    },
+    "fec": {
+      "type": "string"
+    },
+    "hor": {
+      "type": "string"
+    },
+    "lat": {
+      "type": "string"
+    },
+    "lon": {
+      "type": "string"
+    },
+    "vel": {
+      "type": "string"
+    },
+    "dir": {
+      "type": "string"
+    },
+    "gps": {
+      "type": "string"
+    },
+    "eda": {
+      "type": "string"
+    },
+    "csq": {
+      "type": "string"
+    },
+    "evt": {
+      "type": "string"
+    },
+    "dig": {
+      "type": "string"
+    },
+    "nmg": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "users": {
+      "type": "hasMany",
+      "model": "user",
+      "foreignKey": ""
+    },
+    "vehiculo": {
+      "type": "belongsTo",
+      "model": "Vehiculo",
+      "foreignKey": ""
+    },
+    "reportes": {
+      "type": "hasMany",
+      "model": "Reporte",
+      "foreignKey": "id_e_obj"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

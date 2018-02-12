@@ -1,0 +1,70 @@
+{
+  "name": "Empresa",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "direccion": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "razon_social": {
+      "type": "string"
+    },
+    "localidad": {
+      "type": "string"
+    },
+    "provincia": {
+      "type": "string"
+    },
+    "cuit": {
+      "type": "string"
+    },
+    "contacto_tec": {
+      "type": "string"
+    },
+    "numero_tec": {
+      "type": "string"
+    },
+    "contacto_com": {
+      "type": "string"
+    },
+    "numero_com": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "users": {
+      "type": "hasMany",
+      "model": "user",
+      "foreignKey": ""
+    },
+    "equipos": {
+      "type": "hasMany",
+      "model": "Equipo",
+      "foreignKey": ""
+    },
+    "vehiculos": {
+      "type": "hasMany",
+      "model": "Vehiculo",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

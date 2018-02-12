@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "mongodb_1",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mongodb_1",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mongodb_1",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "mongodb_1",
+    "public": false
+  },
+  "Email": {
+    "dataSource": "emailDs"
+  },
+  "User": {
+    "dataSource": "mongodb_1",
+    "public": false
+  },
+  "user": {
+    "dataSource": "mongodb_1",
+    "public": true,
+    "options": {}
+  },
+  "Empresa": {
+    "dataSource": "mongodb_1",
+    "public": true
+  },
+  "Equipo": {
+    "dataSource": "mongodb_1",
+    "public": true
+  },
+  "Reporte": {
+    "dataSource": "mongodb_1",
+    "public": true
+  },
+  "Vehiculo": {
+    "dataSource": "mongodb_1",
+    "public": true
+  }
+}

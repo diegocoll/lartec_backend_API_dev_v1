@@ -1,0 +1,69 @@
+{
+  "name": "Vehiculo",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "patente": {
+      "type": "string",
+      "required": true
+    },
+    "modelo": {
+      "type": "string"
+    },
+    "marca": {
+      "type": "string"
+    },
+    "tipo": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    },
+    "chofer": {
+      "type": "string"
+    },
+    "fec_crea": {
+      "type": "date"
+    },
+    "fec_modi": {
+      "type": "date"
+    },
+    "titular": {
+      "type": "string"
+    },
+    "chasis": {
+      "type": "string"
+    },
+    "motor": {
+      "type": "string"
+    },
+    "voltaje": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "empresa": {
+      "type": "belongsTo",
+      "model": "Empresa",
+      "foreignKey": ""
+    },
+    "equipo": {
+      "type": "belongsTo",
+      "model": "Equipo",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

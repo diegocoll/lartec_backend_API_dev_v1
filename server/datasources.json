@@ -1,0 +1,31 @@
+{
+  "emailDs": {
+    "name": "emailDs",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "SMTP",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "diegocoll4444@gmail.com",
+          "pass": "coll4444"
+        }
+      }
+    ]
+  },
+  "mongodb_1": {
+    "host": "52.67.38.16",
+    "port": 27017,
+    "url": "",
+    "database": "test",
+    "password": "dHGe7825",
+    "name": "mongodb_1",
+    "user": "sgEg3564",
+    "connector": "mongodb"
+  }
+}
