@@ -49,6 +49,15 @@
     },
     "voltaje": {
       "type": "string"
+    },
+    "emp_seguro": {
+      "type": "string"
+    },
+    "num_poliza": {
+      "type": "string"
+    },
+    "tip_seguro": {
+      "type": "string"
     }
   },
   "validations": [],

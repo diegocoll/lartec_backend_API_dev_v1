@@ -1,11 +1,16 @@
 {
   "name": "Equipo",
   "base": "PersistedModel",
-  "idInjection": true,
+  "idInjection": false,
   "options": {
     "validateUpsert": true
   },
   "properties": {
+    "id": {
+      "type": "string",
+      "length": 5,
+      "id": true
+    },
     "firmware": {
       "type": "string"
     },
@@ -20,10 +25,6 @@
     },
     "ip_serv": {
       "type": "string"
-    },
-    "equipo_id": {
-      "type": "string",
-      "required": true
     },
     "puerto_serv": {
       "type": "string"
@@ -113,7 +114,7 @@
     "reportes": {
       "type": "hasMany",
       "model": "Reporte",
-      "foreignKey": "id_e_obj"
+      "foreignKey": "id_e"
     }
   },
   "acls": [],

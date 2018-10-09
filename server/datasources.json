@@ -5,15 +5,15 @@
     "transports": [
       {
         "type": "SMTP",
-        "host": "smtp.gmail.com",
+        "host": "wo29.wiroos.host",
         "secure": true,
         "port": 465,
         "tls": {
           "rejectUnauthorized": false
         },
         "auth": {
-          "user": "diegocoll4444@gmail.com",
-          "pass": "coll4444"
+          "user": "noreply@lartec.com.ar",
+          "pass": "b6oEPfcFje0S"
         }
       }
     ]

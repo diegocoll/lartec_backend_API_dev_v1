@@ -60,10 +60,6 @@
     },
     "nmg": {
       "type": "string"
-    },
-    "id_e_obj": {
-      "type": "object",
-      "required": true
     }
   },
   "validations": [],
@@ -71,7 +67,7 @@
     "equipo": {
       "type": "belongsTo",
       "model": "Equipo",
-      "foreignKey": "id_e_obj"
+      "foreignKey": "id_e"
     }
   },
   "acls": [],

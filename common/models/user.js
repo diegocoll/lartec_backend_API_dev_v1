@@ -5,7 +5,7 @@
 
 var config = require('../../server/config.json');
 var path = require('path');
-var senderAddress = "noreply@loopback.com"; //Replace this address with your actual address
+var senderAddress = "noreply@lartec.com.ar"; //Replace this address with your actual address
 
 module.exports = function(User) {
   //send verification email after registration
@@ -14,7 +14,7 @@ module.exports = function(User) {
       type: 'email',
       to: user.email,
       from: senderAddress,
-      subject: 'Thanks for registering.',
+      subject: 'LARTEC, Gracias por elergirnos.',
       template: path.resolve(__dirname, '../../server/views/verify.ejs'),
       redirect: '/verified',
       user: user
@@ -34,7 +34,7 @@ module.exports = function(User) {
       });
     });
   });
-  
+
   // Method to render
   User.afterRemote('prototype.verify', function(context, user, next) {
     context.res.render('response', {

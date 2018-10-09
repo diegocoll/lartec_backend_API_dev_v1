@@ -9,9 +9,14 @@ var path = require('path');
 module.exports = function(app) {
   var User = app.models.user;
 
+  // LA LINEA DE ABAJO VER SI LA SACAMOS POR CUESTIONES DE SEGURIDAD
+
   app.get('/', app.loopback.status());
 
+  // ------------------------------------------
+
   //login page
+
   app.get('/login', function(req, res) {
     var credentials = dsConfig.emailDs.transports[0].auth;
     res.render('login', {
@@ -24,7 +29,13 @@ module.exports = function(app) {
 
   //verified
   app.get('/verified', function(req, res) {
-    res.render('verified');
+
+    // CAMBIAR POR PAGINA NUEVA DE VERIFICACION DE CUEnTA... HACERLA SEGUN TEMA DE COLORES.
+
+    // res.render('verified');
+
+    res.redirect('http://localhost:8080/#/bienvenido');
+
   });
 
   //log a user in
