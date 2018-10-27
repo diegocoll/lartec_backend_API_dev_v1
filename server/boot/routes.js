@@ -34,7 +34,8 @@ module.exports = function(app) {
 
     // res.render('verified');
 
-    res.redirect('http://localhost:8080/#/bienvenido');
+    res.redirect('http://54.233.162.8/#/bienvenido');
+    // res.redirect('http://localhost:8080/#/bienvenido');
 
   });
 
